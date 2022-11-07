@@ -1,4 +1,4 @@
-# Checkponint I - da matéria da Digital House 
+# Checkponint I - Matéria da Digital House 
 
 ## Projeto com o tema da copa ⚽
 Crie um card com o seu jogador preferido, monte o seu time dos sonhos ⭐
