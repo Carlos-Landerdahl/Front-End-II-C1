@@ -1,7 +1,7 @@
-# Checkponint I - Matéria da Digital House 
+# Checkpoint I - Matéria da Digital House 
 
 ## Projeto com o tema da copa ⚽
-Crie um card com o seu jogador preferido, monte o seu time dos sonhos ⭐
+Crie um card com o seu jogador preferido e monte o seu time dos sonhos ⭐
 
 Projeto feito com: 
 * [Carlos Roberto Landerdahl Neto](https://github.com/Carlos-Landerdahl)
