@@ -30,7 +30,8 @@
     </header>
     <form class="form">
         <label for="">Nome</label>
-        <input type="text" id="nick">
+        <input type="text" id="nick" required>
+        <small id="smallNick">Mínimo de 3 caracteres</small>
 
         <label for="">Descrição</label>
         <input type="text" id="content">
@@ -41,7 +42,7 @@
         <label for="">Número da camiseta</label>
         <input type="text" id="number">
 
-        <input type="submit" value="Enviar" id="sendButton">
+        <input type="submit" value="Enviar" id="sendButton" disabled>
     </form>
     <section>
         <div class="container-cards" id="container-cards">

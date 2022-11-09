@@ -108,6 +108,10 @@ body {
     font-weight: 300;
 }
 
+small {
+    display: none;
+}
+
 .container-cards {
     display: flex;
     flex-wrap: wrap;

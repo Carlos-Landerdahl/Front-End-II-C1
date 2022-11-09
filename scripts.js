@@ -1,12 +1,20 @@
 let sendButton = document.getElementById('sendButton');
+let nick = document.getElementById('nick');
+let content = document.getElementById('content');
+let img = document.getElementById('img');
+let number = document.getElementById('number');
 
 sendButton.addEventListener('click', function (e) {
+    if(nick.value=="" || 
+    content.value=="" ||
+    img.value==""||
+    number.value==""){
+        sendButton.setAttribute("disabled", true)
+    }
+    else{
+        sendButton.removeAttribute("disabled")
+    }
     e.preventDefault()
-
-    let nick = document.getElementById('nick');
-    let content = document.getElementById('content');
-    let img = document.getElementById('img');
-    let number = document.getElementById('number');
 
     console.log(nick.value);
 
@@ -22,7 +30,20 @@ sendButton.addEventListener('click', function (e) {
     <span>${number.value}</span>
     </div>`
 
-    card.classList.add("card")
+    card.classList.add("card") 
     
     containerCards.appendChild(card)
 })
+
+let smallNick = document.getElementById("smallNick")
+
+nick.addEventListener("keyup", function(){
+    if(nick.value.length < 3){
+        smallNick.style.display="block"
+    }
+    else {
+        smallNick.style.display="none"
+    }
+    
+})
+
