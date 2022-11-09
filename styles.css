@@ -107,3 +107,52 @@ body {
 .form label {
     font-weight: 300;
 }
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+
+    margin: 0 10px;
+}
+
+.card {
+    background-color: #CECECE;
+
+    width:20%;
+    margin-bottom: 10px;
+    height: fit-content;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.card-text {
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card>* {
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: cover;
+    border-radius: 50%; 
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-weight: 400;
+    text-align: justify;
+}
+
+.card span {
+    font-size: 25px;
+}
