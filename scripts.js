@@ -20,6 +20,12 @@ function validator() {
 
 nick.addEventListener("input", function(e){
     validator()
+    if (nick.value.length < 3) {
+        smallNick.style.display = "block"
+    }
+    else {
+        smallNick.style.display = "none"
+    }
 })
 
 content.addEventListener("input", function(e){
@@ -35,17 +41,6 @@ number.addEventListener("input", function (e) {
 })
 
 let smallNick = document.getElementById("smallNick")
-
-nick.addEventListener("keyup", function () {
-    if (nick.value.length < 3) {
-        smallNick.style.display = "block"
-    }
-    else {
-        smallNick.style.display = "none"
-    }
-
-})
-
 
 sendButton.addEventListener('click', function (e) {
     e.preventDefault()
