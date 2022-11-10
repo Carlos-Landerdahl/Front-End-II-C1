@@ -133,6 +133,22 @@ small {
     border-radius: 10px;
 
     text-align: center;
+
+    position: relative;
+}
+
+.card-icon {
+    width: 30px;
+
+    position: absolute;
+    right: -20px;
+    top: -20px;
+
+    transition: 0.5s;
+}
+
+.card-icon:hover {
+    transform: scale(1.1);
 }
 
 .card-content {
