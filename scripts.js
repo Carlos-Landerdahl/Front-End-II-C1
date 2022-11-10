@@ -7,10 +7,10 @@ let number = document.getElementById('number');
 sendButton.disabled = true;
 function validator() {
     if (
-        nick.value !== null && nick.value !== '' &&
-        content.value !== null && content.value !== '' &&
-        img.value !== null && img.value !== '' &&
-        number.value !== null && number.value !== ''
+        nick.value.length > 2 && nick.value !== '' &&
+        content.value.length > 4 && content.value !== '' &&
+        img.value.length > 4 && img.value !== '' &&
+        number.value.length > 0 && number.value !== ''
     ){
         sendButton.disabled = false;
     }else {
@@ -19,17 +19,12 @@ function validator() {
 }
 
 nick.addEventListener("input", function(e){
+    smallNick.style.display = "block"
     validator()
-    if (nick.value.length < 3) {
-        smallNick.style.display = "block"
-    }
-    else {
-        smallNick.style.display = "none"
-    }
 })
 
 content.addEventListener("input", function(e){
-    validator()
+    validator() 
 })
 
 img.addEventListener("input", function (e) {
