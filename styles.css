@@ -8,6 +8,9 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    background: rgb(161,13,55);
+    background: linear-gradient(125deg, rgba(161,13,55,1) 0%, rgba(31,1,11,1) 100%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
 }
 
 .header {
@@ -19,9 +22,9 @@ body {
     height: 6rem;
     width: 100%;
 
-    background-color: #40bdae;
+    background-color: #efeee5;
 
-    color: #19423d;
+    color: #2a2c2c;
 }
 
 .header .header-title {
@@ -64,10 +67,10 @@ body {
     flex-direction: column;
     padding: 30px;
     gap: 10px;
-    height: 450px;
+    min-height: 450px;
     width: 100%;
     max-width: 440px;
-    background-color: #edece3;
+    background-color: #efeee5;
     margin: 40px auto;
     border-radius: 7px;
 }
@@ -122,14 +125,18 @@ small {
     margin-top: 60px;
 }
 
+svg {
+    position: relative;
+    bottom: -10px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #CECECE;
+    background-color: #efeee5;
     max-width: 300px;
     height: 400px;
     margin-bottom: 10px;
-    height: fit-content;
     border-radius: 10px;
 
     text-align: center;
@@ -159,6 +166,15 @@ small {
     gap: 15px;
 }
 
+.card-image {
+    width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
 img {
     border-radius: 10px;
     width: 100%;
@@ -177,8 +193,27 @@ img {
 .card span {
     margin-left: 10px;
     font-weight: bold;
-    background-color: #edece3;
+    background-color: #41af94;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.3rem;
+}
+
+footer {
+    background-image: url("./assets/wave.svg");
+
+    height: 100%;
+}
+
+@media (max-width: 940px){
+    svg {
+        position: absolute;
+    }
+}
+
+@media (max-width: 450px){
+    .form {
+        max-width: 350px;
+    }
+
 }
