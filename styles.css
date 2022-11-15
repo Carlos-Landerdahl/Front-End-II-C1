@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background: rgb(161,13,55);
@@ -25,6 +25,9 @@ body {
     background-color: #efeee5;
 
     color: #2a2c2c;
+    -webkit-box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
+    box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
 }
 
 .header .header-title {
@@ -41,11 +44,11 @@ body {
 
 .header-title h4 {
     transition: color ease-in .2s;
-    color: #29756c;
+    color: #ae830b;
 }
 
 .header h1:hover,h4:hover {
-    color: #0d2320;
+    color: #4e3b05;
 }
 
 .header img { 
@@ -73,6 +76,9 @@ body {
     background-color: #efeee5;
     margin: 40px auto;
     border-radius: 7px;
+    -webkit-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
 }
 
 .form input[type=text]{
@@ -82,6 +88,11 @@ body {
     border: none;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+::placeholder {
+    opacity: .6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form input[type=text]:focus {
@@ -116,6 +127,7 @@ small {
 }
 
 .container-cards {
+    
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -138,10 +150,16 @@ svg {
     height: 400px;
     margin-bottom: 10px;
     border-radius: 10px;
-
     text-align: center;
-
+    -webkit-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 26px -4px rgba(0,0,0,0.42);
     position: relative;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(102%);
 }
 
 .card-icon {
@@ -166,6 +184,21 @@ svg {
     gap: 15px;
 }
 
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.card-text > p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
 .card-image {
     width: 300px;
     height: 250px;
@@ -173,21 +206,13 @@ svg {
     background-size: cover;
     background-position: center;
     border-radius: 10px 10px 0 0;
-}
-
-img {
-    border-radius: 10px;
-    width: 100%;
+    -webkit-box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
+    box-shadow: 0px 12px 11px -1px rgba(0,0,0,0.32);
 }
 
 .card h3 {
     font-size: 20px;
-}
-
-.card p {
-    font-weight: 400;
-    text-align: justify;
-    padding: 10px;
 }
 
 .card span {
