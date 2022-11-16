@@ -81,7 +81,7 @@ sendButton.addEventListener('click', function (e) {
     card.innerHTML = `
     <div class="card-content">
     <div class="card-image" id="card-image" style="background-image:url(${img.value})"></div>
-    <img class="card-icon" src="https://cdn-icons-png.flaticon.com/512/5974/5974771.png" alt="">
+    <img class="card-icon" id="card-icon" onclick="this.parentNode.parentNode.remove(this);" src="https://cdn-icons-png.flaticon.com/512/5974/5974771.png" alt="">
     <div class="card-text">
         <h3>${nick.value}<span>${number.value}</span></h3>
         <p>${content.value}</p>
